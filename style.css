@@ -125,12 +125,15 @@ header {
 }
 
 .cards {
+    
     column-count: 4;
     width: 50%;
     align-items: center;
 }
 
 #card {
+    display: inline-block;
+  text-align: left;
     background-color: #0074FF;
     padding: 1%;
     height: 400px;
