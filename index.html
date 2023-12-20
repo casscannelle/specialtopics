@@ -4,90 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
         <section class="logo">
-            <img src="/images/logo_black.png">
+            <img src="/images/logo_black.png" width="130px">
         </section>
         <section class="topnav" id="topnav">
             <a class="active" href="#topnav">Início</a>
             <a href="#localizacao">Localização</a>
             <a href="#servicos">Serviços</a>
             <a href="#segmentos">Segmentos</a>
+            <a href="javascript:void(0);" class="icon" onclick="topNav()">
+                <i class="fa fa-bars"></i>
+            </a>
         </section>
     </header>
     <container class="destaque" id="destaque">
-        <img src="/images/target.png">
-        <h1>Transformação Digital</h1>
-        <p>
+        <img class="target" src="/images/target.png" width="750px">
+            <section><h1>Transformação Digital</h1>
+            <p>
             Lorem Ipsum is simply dummy
             text of the printing and typesetting
             industry. Lorem Ipsum has been the
             industry's standard dummy text ever
             since the 1500s.
-        </p>
+            </p>
 
-        <button>Ativar Notificações</button>
+            <button>Ativar Notificações</button>
+            </section>
     </container>
 
     <container class="localizacao" id="localizacao">
-        <h2>Localização</h2>
+        <section><h2>Localização</h2>
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+            Lorem Ipsum is simply dummy text of the printing <br>
+            and typesetting industry. Lorem Ipsum has been the industry's standard.
         </p>
+    </section>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.1167072780877!2d-49.27840012723702!3d-25.5011539859985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfb454a133223%3A0x5f4672d442a88fe5!2sRua%20Anibal%20Requi%C3%A3o%2C%20500%20-%20Xaxim%2C%20Curitiba%20-%20PR%2C%2081810-370!5e0!3m2!1spt-BR!2sbr!4v1703083092756!5m2!1spt-BR!2sbr" width="650" height="304" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
 
     </container>
     <container class="servicos" id="servicos">
         <h2>Serviços</h2>
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+            Lorem Ipsum is simply dummy text of the printing <br>
+            and typesetting industry. Lorem Ipsum has been the industry's standard
         </p>
         <section class="cards" id="cards">
-            <span id="card1">
+            <div id="card">
                 <h3>01</h3>
                 <h4>UX Design</h4>
-                <h5>o	Web Development 
-                    o	SaaS Platform Development
-                    o	Full Stack Development
+                <p>o	Web Development<br>
+                    o	SaaS Platform Development<br>
+                    o	Full Stack Development<br><br>
                     
                     We create innovative solutions to solve customer problems and giving you more control over product.
-                    </h5>
-            </span>
-            <span id="card2">
+                </p>
+            </div>
+            <div id="card">
                 <h3>02</h3>
                 <h4>Front-end</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 </p>
-            </span>
-            <span id="card3">
+            </div>
+            <div id="card">
                 <h3>03</h3>
                 <h4>Test</h4>
                 <p>Designing success through creative web design for your business to be the best.
 
                     Improving customer engagement with enhanced user experience.
                 </p>
-            </span>
-            <span id="card4">
+            </div>
+            <div id="card">
                 <h3>04</h3>
                 <h4>Delivery</h4>
                 <p>Develop your MVP with our experts who help create a solution that solves customer problems.
 
                     We fill in the technology gaps for you.
                 </p>
-            </span>
+            </div>
         </section>
 
     </container>
     <container class="segmentos" id="segmentos">
         <h2>Segmentos</h2>
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
+            Lorem Ipsum is simply dummy text of the printing and <br>
+            typesetting industry. Lorem Ipsum has been the industry's standard.
         </p>
         <section class="blocks" id="blocks">
-            <span id="block1">
+            <span id="block">
                 <img src="/images/ecommerce.png">
                 <h5>UX Design</h5>
                 <p>o	Web Development 
@@ -97,35 +113,35 @@
                     We create innovative solutions to solve customer problems and giving you more control over product.
                     </p>
             </span>
-            <span id="block2">
+            <span id="block">
                 <img src="/images/fintechs.png">
                 <h5>Front-end</h5>
                 <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
                     With e-commerce solutions, ERPS and improvised customer services.
                 </p>
             </span>
-            <span id="block3">
+            <span id="block">
                 <img src="/images/mobilidade.png">
                 <h5>Test</h5>
                 <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
                     With e-commerce solutions, ERPS and improvised customer services.
                 </p>
             </span>
-            <span id="block4">
+            <span id="block">
                 <img src="/images/entretenimento.png">
                 <h5>Delivery</h5>
                 <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
                     With e-commerce solutions, ERPS and improvised customer services.
                 </p>
             </span>
-            <span id="block5">
+            <span id="block">
                 <img src="/images/direito.png">
                 <h5>Delivery</h5>
                 <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
                     With e-commerce solutions, ERPS and improvised customer services.
                 </p>
             </span>
-            <span id="block6">
+            <span id="block">
                 <img src="/images/hospitalidade.png">
                 <h5>Delivery</h5>
                 <p>We assist physical and digital retailers, wholesalers, and suppliers to automate commercial operations and business workflows.
@@ -135,8 +151,11 @@
         </section>
     </container>
     <footer>
-        <img src="/images/logo_white.png">
+        <section class="logo-footer">
+        <img src="/images/logo_white.png" width="130px">
+        </section>
         <p>© Copyright 2022 | All Rights Reserved</p>
     </footer>
+<script src="/scripts.js"></script>
 </body>
 </html>
