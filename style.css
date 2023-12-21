@@ -113,7 +113,7 @@ header {
     margin-top: 3%;
 }
 
-.localizacao, .servicos, .segmentos {
+.geolocation, .servicos, .segmentos {
     display: flex;
     flex-direction: column;
     text-align: center;

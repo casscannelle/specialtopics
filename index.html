@@ -40,15 +40,23 @@
             </section>
     </container>
 
-    <container class="localizacao" id="localizacao">
+    <container class="geolocation" id="geolocation">
         <section><h3>Localização</h3>
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard.
         </p>
     </section>
-    <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.1167072780877!2d-49.27840012723702!3d-25.5011539859985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfb454a133223%3A0x5f4672d442a88fe5!2sRua%20Anibal%20Requi%C3%A3o%2C%20500%20-%20Xaxim%2C%20Curitiba%20-%20PR%2C%2081810-370!5e0!3m2!1spt-BR!2sbr!4v1703083092756!5m2!1spt-BR!2sbr" width="650" height="304" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+    
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="600" height="500" id="gmap_canvas" src="" name="map" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <a href="https://fmovies-online.net"></a><br>
+            <style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>
+            <a href="https://www.embedgooglemap.net"></a>
+            <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>
+        </div>
+    </div>
+  
 
     </container>
     <div class="servicos" id="servicos">
@@ -175,5 +183,6 @@
         <p class="footer">© Copyright 2022 | All Rights Reserved</p>
     </footer>
 <script src="/scripts.js"></script>
+<script src="/geolocation.js"></script>
 </body>
 </html>
