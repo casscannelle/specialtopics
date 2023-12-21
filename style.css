@@ -112,7 +112,11 @@ header {
     padding: 3%;
     margin-top: 3%;
 }
-
+.geolocation {
+    background: url('/svg/circulo.svg');
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
 .geolocation, .servicos, .segmentos {
     display: flex;
     flex-direction: column;
@@ -120,8 +124,22 @@ header {
     padding-top: 5%;
 }
 
+.split {
+    padding-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    text-align: center;
+}
 .servicos, .segmentos {
-    padding-top: 13%;
+    padding-top: 8%;
+}
+
+.servicos {
+    background: url('/svg/elipse.svg');
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: right top;
 }
 
 .row {
