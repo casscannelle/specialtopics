@@ -90,17 +90,18 @@ header {
     padding-top: 5%;
 }
 
-.map {
-    position: relative;
-    width: minmax(100px, 300px);
+#map {
+    display: flex;
+    flex-flow: row;
+    size: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.map iframe {
+.gmap_canvas {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 600px;
+    height: 300px;
 }
 
 
@@ -299,7 +300,7 @@ footer {
         padding-top: 2%;
     }
 
-    .map {
+    .gmap_canvas {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
