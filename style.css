@@ -50,28 +50,6 @@ header {
     display: none;
   }
 
-@media screen and (max-width: 825px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-}
-
-@media screen and (max-width: 825px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-}
-
 .destaque {
     width: 100%;
     display: flex;
@@ -84,22 +62,10 @@ header {
     opacity: 74%;
 }
 
-@media screen and (max-width: 825px) {
-    .target{
-        width: auto;
-    }
-
-    .destaque {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: center;
-    }
-}
 
 .destaque h1 {
     font-size: 3.5rem;
-    padding-top: 80px;
+    padding-top: 10%;
 }
 
 
@@ -123,6 +89,20 @@ header {
     text-align: center;
     padding-top: 5%;
 }
+
+.map {
+    position: relative;
+    width: minmax(100px, 300px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.map iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 
 .split {
     padding-top: 5%;
@@ -219,21 +199,6 @@ p {
     top: 6rem; 
 }
 
-@media screen and (max-width: 900px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-    .card-p{
-        align-items: left;
-        text-align: left;
-        padding-bottom: 3%;
-        font-size: 0.7rem;
-        color: #fff;
-    }
-  }
-
 .segmentos {
     padding-bottom: 150px;
 }
@@ -264,19 +229,20 @@ p {
    padding-right: 30%;
 }
 
+
 footer {
     width: 100%;
     background-color: black;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer {
     color: #fff;
     font-size: 0.7rem;
-    padding-right: 2%;
     padding-top: 2%;
+    text-align: right;
     
 }
 
@@ -287,13 +253,81 @@ footer {
     height: auto;
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 800px) {
+
+@media screen and (max-width: 825px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
     .destaque {
-      flex-flow: column;
-      text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
     }
+    
+    .target {
+        width: auto;
+    }
+
+    .destaque h1 {
+        font-size: 2.5rem;
+        padding-top: 10%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        font-weight: 100;
+        text-align: center;
+        color: #000000;
+        padding-bottom: 4%;
+        padding-top: 2%;
+    }
+
     .map {
-        width: 80%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
-  }
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        padding-left: 2%;
+    }
+
+    .card-p {
+        align-items: left;
+        text-align: left;
+        padding-bottom: 3%;
+        font-size: 0.7rem;
+        color: #fff;
+    }
+
+    .blocks {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 2%;
+        
+    }
+    #block {
+        margin-bottom: 7%;
+    }
+
+}
