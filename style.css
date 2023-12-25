@@ -210,6 +210,11 @@ h6 {
     font-size: 1rem;
     font-weight: 600;
 }
+
+h7 {
+    font-size: 1rem;
+    font-weight: 600;
+}
 p {
     font-size: 1.2rem;
     text-align: center;
@@ -296,6 +301,14 @@ footer {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .drag-space {
+        display: flex;
+        flex-direction: column;
+    }
+    .dropzone {
+        min-height: 200px;
     }
 }
 @media screen and (max-width: 825px) {
