@@ -84,7 +84,7 @@ header {
     background-size: 30%;
     
 }
-.geolocation, .servicos, .segmentos {
+.geolocation, .servicos, .segmentos, .drag-drop {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -139,7 +139,37 @@ header {
     height: 300px;
 }
 
+.drag-space {
+    color: black;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 2rem;
+}
 
+.origin {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.draggable {
+    border: 1px dashed #79baf0;
+    background-color: #fff;
+    cursor: grab;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.dropzone {
+    background-color: #0074FF;
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin: 1rem;
+    padding: 1rem;
+}
 
 h2 {
     font-size: 1.2rem;

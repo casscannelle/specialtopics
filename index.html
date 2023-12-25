@@ -101,6 +101,39 @@
         </div>
 
     </container>
+
+    <container>
+        <section class="drag-drop" id="drag-drop">
+        <h3>Monte o seu</h3>
+
+        <div class="drag-space">
+                <div class="origin dropzone"
+                    ondragover="dragOver(event)"
+                    ondrop="drop(event)">
+                    <h3>Serviços disponíveis</h3>
+                    <div id="drag-1" class="draggable" draggable="true"
+                        ondragstart="dragStart(event)">UX Design
+                    </div>
+                    <div id="drag-2" class="draggable" draggable="true"
+                        ondragstart="dragStart(event)">Front-end
+                    </div>
+                    <div id="drag-3" class="draggable" draggable="true"
+                        ondragstart="dragStart(event)">Test
+                    </div>
+                    <div id="drag-4" class="draggable" draggable="true"
+                        ondragstart="dragStart(event)">Delivery
+                    </div>
+                </div>
+                <div class="dropzone"
+                    ondragover="dragOver(event)"
+                    ondrop="drop(event)">
+                    <h3>Serviços selecionados</h3>
+                </div>
+            </div>
+        </section>
+    </container>
+
+
     <container class="segmentos" id="segmentos">
         <h3>Segmentos</h3>
         <p>
